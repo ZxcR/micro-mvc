@@ -16,7 +16,7 @@ class View {
         }
 
         ob_start();
-        $fileView = __DIR__. "/../views/" . $this->view . ".php";
+        $fileView = __DIR__. "/../Views/" . $this->view . ".php";
 
         if(is_file($fileView)) {
             require $fileView;

@@ -3,7 +3,7 @@ namespace App\Core;
 
 abstract class Controller {
 
-    public $layout = __DIR__ . "/../views/layouts/main.php";
+    public $layout = __DIR__ . "/../Views/layouts/main.php";
 
     
     public function __construct()

@@ -11,7 +11,7 @@ class Router {
 
     public function __construct()
     {
-        $this->routes = require(__DIR__ . '/../config/routes.php');
+        $this->routes = require(__DIR__ . '/../Config/routes.php');
     }
     
     public function dispatch($request)
