@@ -2,6 +2,6 @@
 
 require_once "vendor/autoload.php";
 
-require_once "application/config/database.php";
+require_once "application/Config/database.php";
 
 (new App\Core\Kernel)->run();
