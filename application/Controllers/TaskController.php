@@ -41,6 +41,7 @@ class TaskController extends Controller {
 
         if($errors === true) {
             $this->taskService->createTask($data);
+            $_SESSION['messages']['success'] = "Задача добавлена";
         } else {
             $_SESSION['messages'] = $errors->toArray();
             return $this->redirect("../task/create");
