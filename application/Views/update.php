@@ -8,12 +8,6 @@
         <a href="../index" class="btn btn-primary">Список задач</a>
         <a href="../task/create" class="btn btn-primary">Добавить задачу</a>
         <hr>
-        
-        <?php if(isset($messages["success"])): ?>
-            <div class="alert alert-success" role="alert">
-                <?= $messages["success"] ?>
-            </div>
-        <?php endif ?>
 
         <form action="update?id=<?= $task->id ?>" method="post">
             <div class="form-group">

@@ -14,6 +14,14 @@
         <?php endif ?>
         
         <hr>
+
+        <?php if(isset($messages["success"])): ?>
+            <div class="alert alert-success" role="alert">
+                <?= $messages["success"] ?>
+            </div>
+        <?php endif ?>
+
+        
         <div class="table table-responsive">
             <table class="table table-hover">
                 <thead>
