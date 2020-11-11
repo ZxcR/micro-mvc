@@ -18,10 +18,13 @@
         <?php if(isset($messages["success"])): ?>
             <div class="alert alert-success" role="alert">
                 <?= $messages["success"] ?>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
         <?php endif ?>
 
-        
+
         <div class="table table-responsive">
             <table class="table table-hover">
                 <thead>
